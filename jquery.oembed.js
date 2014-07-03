@@ -360,6 +360,8 @@
           }
         }
         container.html(html);
+
+        child = container.children();
         
         if (ebdOpt) {
           ebdOpt = decodeURIComponent(ebdOpt);
@@ -369,10 +371,8 @@
           } catch(e) {
             ebdOpt = {};
           }
-        }
-        
-        child = container.children();
-        child.css(ebdOpt);
+
+          child.css(ebdOpt);
         break;
       case "append":
         container.wrap('<p class="oembedall-container"></p>');
