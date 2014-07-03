@@ -373,6 +373,8 @@
           }
 
           child.css(ebdOpt);
+        }
+        
         break;
       case "append":
         container.wrap('<p class="oembedall-container"></p>');
